@@ -75,3 +75,10 @@ zeigmal
 ```
 systemctl list-unit-files -t service | grep -i ssh # grep zeigt alle Zeilen an, in den in der Ausgabe von systemctl das "ssh" oder "SSH" vorkommt   
 ```
+
+## Wo wird festgelegt, welches Repo (Webseite oder FTP) für die Installation von Paketen verwendet wird 
+
+```
+/etc/yum/repos.d 
+# und dort alle *.repo dateien 
+```
