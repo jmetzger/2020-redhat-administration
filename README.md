@@ -33,3 +33,11 @@ pwd # print working directory
 # 2. Befehl zurückholen 
 # Pfeil Taste nach oben drücken 
 ```
+
+## Verzeichnis anzeigen 
+
+```
+ls -l  # Verzeichnis alphabetisch anzeigen 
+ls -ltr # t letzte Modfikation zuerst anzeigen (Modifizierugsdatum) 
+        # umdrehen - d.h. genau anders herum 
+```
