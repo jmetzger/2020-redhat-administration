@@ -215,11 +215,22 @@ ps aux | grep 928 | grep -c ssh
 ```
 
 
-## Nach paket suchen und installieren installieren 
+## Nach paket suchen und installieren 
 
 ```
 yum search apache | grep httpd 
 sudo yum install httpd
 # Alle Fragen mit "j" beantworten 
+
+# wie heisst der dienst 
+systemctl list-unit-files -t service | grep httpd 
+
+# dienst aktivieren 
+systemctl enable httpd
+systemctl start httpd 
+echo $? # Zeigt Rückgabewert des letzten Befehl -> wenn 0 -> erfolgreich 
+
+
+
 
 ```
