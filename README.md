@@ -230,7 +230,16 @@ systemctl enable httpd
 systemctl start httpd 
 echo $? # Zeigt Rückgabewert des letzten Befehl -> wenn 0 -> erfolgreich 
 
+```
 
-
+## Grafische Oberfläche abschalten 
 
 ```
+# alle targets anzeigen 
+systemctl list-unit-files -t target 
+
+# has to be AllowIsolate in target definition 
+systemctl cat multi-user.target 
+systemctl isolate multi-user.target 
+systemctl set-default multi-user.target
+
