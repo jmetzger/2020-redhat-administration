@@ -19,12 +19,27 @@ sudo su -
 graphical-target 
 ```
 
-## Wie finde ich heraus in welchem Verzeichnis 
+## Wie finde ich heraus in welchem Verzeichnis ich bin ?
 
 ```
 echo ~
 pwd # print working directory 
 # - Zeichen leiten Kommentare ein 
+```
+
+## Wie wechsle ich in Verzeichnis 
+
+```
+# in meiner Heimatzverzeichnis
+cd ~
+# noch einfacher
+cd 
+
+# absolute in ein Verzeichnis reinwechseln 
+cd 
+pwd 
+# aus dem Heimatverzeichnis direkt ins etc vezeichnis 
+cd /etc
 ```
 
 ## Befehl parken und Befehl zurück holen
@@ -43,6 +58,12 @@ cd /home/teilnehmer01/.local
 mkdir bin
 cd bin 
 pwd
+
+# verzeichnisse recursiv anlegen   
+mkdir -p daten/baustelle/gewerk
+
+
+
 ```
 
 
