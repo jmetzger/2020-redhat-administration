@@ -107,3 +107,30 @@ echo $USER
 # oder 
 whoami 
 ```
+
+## Wo sucht Linux nach Programmen / auch das eigene Shell-Script
+
+````
+# in 
+echo $PATH # und zwar in alle Pfaden, die dort ":" - separiert angegeben sind. 
+# wenn er es dort nicht findet, kann er es nicht ausführen
+# Beispiel 
+echo "#!/bin/bash" > /home/teilnehmer03/test.sh 
+echo "echo hallo du" >> /home/teilnehmer03/test.sh
+
+cd /home/teilnehmer03 
+# das geht nicht
+test.sh  # weil es nicht in seinem Pfad ist in $PATH
+# das geht
+./test.sh 
+```
+
+# Umgebungsvariablen anzeigen
+
+```
+env
+# eine spezielle z.B PATH
+echo $PATH
+echo $USER
+```
+
