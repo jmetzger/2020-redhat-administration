@@ -215,5 +215,11 @@ ps aux | grep 928 | grep -c ssh
 ```
 
 
+## Nach paket suchen und installieren installieren 
+
+```
+yum search apache | grep httpd 
+sudo yum install httpd
+# Alle Fragen mit "j" beantworten 
 
 ```
