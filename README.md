@@ -41,3 +41,26 @@ ls -l  # Verzeichnis alphabetisch anzeigen
 ls -ltr # t letzte Modfikation zuerst anzeigen (Modifizierugsdatum) 
         # umdrehen - d.h. genau anders herum 
 ```
+
+## Hilfe bekommen
+
+```
+man pwd # das funktioniert in Centos/Redhat zu 99,9% 
+# und bei eingebauten Befehlen (in die bash eingebaut)
+help pwd
+```
+
+## Dateien / Verzeichnisse löschen 
+
+```
+rm training 
+# nachfrage löschen mit "y" oder "j" beantworten 
+```
+
+## Alias einrichten und verwenden 
+
+```
+# In diesem Beispiel geht das nur in der aktuellen Session 
+alias zeigmal='ls -la'
+zeigmal 
+```
