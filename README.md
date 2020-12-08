@@ -22,3 +22,14 @@ echo ~
 pwd # print working directory 
 # - Zeichen leiten Kommentare ein 
 ```
+
+## Befehl parken und Befehl zurück holen
+
+```
+# 1. vor den Befehl # schreiben
+# z.B. 
+# rm -r verzeichnis # und enter - Taste drücken 
+
+# 2. Befehl zurückholen 
+# Pfeil Taste nach oben drücken 
+```
