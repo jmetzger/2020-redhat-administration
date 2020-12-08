@@ -99,3 +99,11 @@ history
 # nr. herausfinden, befehl 50 ausführen 
 !50 # und return bzw. enter eingeben 
 ```
+
+## Where bin ich ? (mein Benutzername) 
+
+```
+echo $USER 
+# oder 
+whoami 
+```
