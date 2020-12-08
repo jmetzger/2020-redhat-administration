@@ -118,7 +118,7 @@ whoami
 
 ## Wo sucht Linux nach Programmen / auch das eigene Shell-Script
 
-````
+```
 # in 
 echo $PATH # und zwar in alle Pfaden, die dort ":" - separiert angegeben sind. 
 # wenn er es dort nicht findet, kann er es nicht ausführen
@@ -133,7 +133,7 @@ test.sh  # weil es nicht in seinem Pfad ist in $PATH
 ./test.sh 
 ```
 
-# Umgebungsvariablen anzeigen
+## Umgebungsvariablen anzeigen
 
 ```
 env
@@ -141,4 +141,19 @@ env
 echo $PATH
 echo $USER
 ```
+
+## Verzeichnis anlegen und Rechte 
+
+```
+# Neue Dateien und Verzeichnisse
+# haben die Besitz-Rechte des Benutzers,
+# der sie anlegt, d.h.  Benutzername und seine Hauptgruppe
+# z.B. trainer01 gehört der Hauptgruppe trainer01 an.
+cd # wechselt in das Heimatverzeichnis 
+mkdir testordner
+
+# mit id können wir sehen, wer wir sind und welcher Hautpgruppe wir angehören 
+id 
+```
+
 
