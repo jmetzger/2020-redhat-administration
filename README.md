@@ -188,3 +188,32 @@ echo 'echo sonnenschein' >> test2.sh
 chmod u+x test2.sh
 cat test2.sh
 ```
+
+## Prozesse anzeigen 
+
+```
+ps aux
+# bestimmte prozesse
+ps aux | grep ssh
+top 
+
+# alle zielen mit bestimmter und nachranging aus diesen Zeile nur die mit ssh
+cat /run/ssh.pid 
+ps aux | grep 928 | grep ssh
+# oder anzahl
+ps aux | grep 928 | grep -c ssh 
+
+```
+
+## In less/man suchen
+
+```
+# suche 
+# / eingeben und nach was ihr sucht, z.B. unix + Return 
+# nächstes Ergebnis: n - Taste drücken 
+# letztes Ergebnis: N - Taste drücken 
+```
+
+
+
+```
