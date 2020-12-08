@@ -70,10 +70,14 @@ alias zeigmal='ls -la'
 zeigmal 
 ```
 
-## Wie kann ich herausfinden, ob ein Dienst auf dem System existiert ? 
+## Wie kann ich herausfinden, ob ein Dienst auf dem System existiert und läuft ? 
 
 ```
+# Dienst existiert 
 systemctl list-unit-files -t service | grep -i ssh # grep zeigt alle Zeilen an, in den in der Ausgabe von systemctl das "ssh" oder "SSH" vorkommt   
+# Hiermit herausfinden, ob der Dienst läuft 
+systemctl status sshd  # wenn wir keine .service dahinter schreiben, geht systemctl davon aus, dass wir einen service meinen 
+systemctl status sshd.service 
 ```
 
 ## Wo wird festgelegt, welches Repo (Webseite oder FTP) für die Installation von Paketen verwendet wird 
