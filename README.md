@@ -37,6 +37,14 @@ pwd # print working directory
 # 2. Befehl zurückholen 
 # Pfeil Taste nach oben drücken 
 ```
+## Verzeichnis anlegen
+```
+cd /home/teilnehmer01/.local
+mkdir bin
+cd bin 
+pwd
+```
+
 
 ## Verzeichnis anzeigen 
 
