@@ -82,3 +82,11 @@ systemctl list-unit-files -t service | grep -i ssh # grep zeigt alle Zeilen an, 
 /etc/yum/repos.d 
 # und dort alle *.repo dateien 
 ```
+
+## Einen Befehl aus der Historie ausführen ? 
+
+```
+history 
+# nr. herausfinden, befehl 50 ausführen 
+!50 # und return bzw. enter eingeben 
+```
