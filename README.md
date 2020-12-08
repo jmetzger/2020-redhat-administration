@@ -78,6 +78,11 @@ systemctl list-unit-files -t service | grep -i ssh # grep zeigt alle Zeilen an, 
 # Hiermit herausfinden, ob der Dienst läuft 
 systemctl status sshd  # wenn wir keine .service dahinter schreiben, geht systemctl davon aus, dass wir einen service meinen 
 systemctl status sshd.service 
+
+# lauscht der dienst nach draussen
+lsof -i | grep ssh 
+# welcher port ist ssh, d.h. welche zahl 
+cat /etc/services | grep ssh 
 ```
 
 ## Wo wird festgelegt, welches Repo (Webseite oder FTP) für die Installation von Paketen verwendet wird 
