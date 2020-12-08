@@ -69,3 +69,9 @@ rm training
 alias zeigmal='ls -la'
 zeigmal 
 ```
+
+## Wie kann ich herausfinden, ob ein Dienst auf dem System existiert ? 
+
+```
+systemctl list-unit-files -t service | grep -i ssh # grep zeigt alle Zeilen an, in den in der Ausgabe von systemctl das "ssh" oder "SSH" vorkommt   
+```
