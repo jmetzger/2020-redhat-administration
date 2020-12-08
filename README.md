@@ -1,5 +1,9 @@
 # Redhat Administration 
 
+## Cheatsheet 
+
+  * https://www2.icp.uni-stuttgart.de/~icp/mediawiki/images/b/bd/Sim_Meth_I_T0_cheat_sheet_10_11.pdf
+
 ## Als Root arbeiten 
 
 ```
