@@ -40,6 +40,7 @@ pwd # print working directory
 ls -l  # Verzeichnis alphabetisch anzeigen 
 ls -ltr # t letzte Modfikation zuerst anzeigen (Modifizierugsdatum) 
         # umdrehen - d.h. genau anders herum 
+ls -la 
 ```
 
 ## Hilfe bekommen
