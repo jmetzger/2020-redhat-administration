@@ -177,4 +177,14 @@ mkdir testordner
 id 
 ```
 
+## Datei anlegen mit Umleitung 
 
+```
+cd /home/trainer01/.local
+mkdir bin
+cd bin 
+echo '#!/bin/bash' > test2.sh
+echo 'echo sonnenschein' >> test2.sh
+chmod u+x test2.sh
+cat test2.sh
+```
