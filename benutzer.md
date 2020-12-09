@@ -20,3 +20,13 @@ passwd benutzer
 usermod -aG wheel benutzer
 ```
 
+## Besitz- und Gruppenrechte ändern 
+
+```
+# User und Gruppe ändern 
+chown trainer01:trainer01 testdatei22 
+# User ändern 
+chown root testdatei22 
+# Gruppe ändern 
+chown :root testdatei 22 
+```
