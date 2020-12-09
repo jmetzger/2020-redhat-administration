@@ -1,4 +1,6 @@
 # Rechte
+
+## Allgemein 
 ```
 - | rw- |
 
@@ -32,6 +34,8 @@ chmod u+r,u-w testdatei
 
 
 ```
+
+## Verzeichnis 
 
 
 
