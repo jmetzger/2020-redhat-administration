@@ -37,6 +37,30 @@ chmod u+r,u-w testdatei
 
 ## Verzeichnis 
 
+```
+mkdir testdir
+# Alle Berechtigungen für User entzogen 
+chmod u= testdir
+# wir können nicht reinwechseln 
+# permission denied
+cd testdir
+# Ausführungsrechte gegeben fürs aktuelle Verzeichnis = testdir 
+# wir können zwar reinwechseln aber nix lesen und schreiben 
+chmod u+x . 
+# Schreibrechte hinzufügen, jetzt können dateien erstellen, d.h. in das Verzeichnis schreiben 
+# Aber nicht das Verzeichnis lesen, ausser wir kennen dateinamen 
+chmod u+w .
+echo "test" > testdatei2
+# geht nicht ! lesen nicht erlaubt 
+ls -la
+# geht, lesen zwar nicht erlaubt, aber wir kennen den Dateinamen 
+ls -la testdatei2
+# jetzt dürfen wir wieder alles = rwx 
+chmod u+r .
+
+```
+
+```
 
 
 ## Spezielles Verhalten von vi bei w! (overwrite) 
