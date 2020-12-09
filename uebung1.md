@@ -1,4 +1,4 @@
-# Übung 
+# Übung - Anlegen Verzeichnisse und Scripte 
 
 ## Walkthrough 
 
