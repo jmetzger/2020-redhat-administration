@@ -1,8 +1,7 @@
 # Redhat Administration 
 
 1. [Übung](uebung1.md) 
-1. [Übung: Installieren von Diensten](uebung-systemctl.md) 
-
+1. [Übung: Installieren von Diensten](uebung-dienste.md) 
 
 ## Cheatsheet 
 
