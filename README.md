@@ -284,4 +284,29 @@ systemctl list-unit-files -t target
 systemctl cat multi-user.target 
 systemctl isolate multi-user.target 
 systemctl set-default multi-user.target
+```
 
+## Automatische Indizierung des System für die Suche mit locate aktivieren
+
+  * Das ist auf Centos 8 nicht standardmäßig der Fall 
+  * https://bugzilla.redhat.com/show_bug.cgi?id=1697244
+  
+```
+# Fix
+# Schritt 1: händisch aktualisieren
+updatedb 
+# Schrit 2: Timer aktivieren, damit es ab dem nächsten Tag läuft 
+# Timer aktivieren, damit dieser nach dem nächsten Reboot automatisch läuft 
+systemctl enable mlocate-updatedb.timer
+# Timer jetzt gestartet für nächsten Durchlauf (um 24:00 jeden Tag) 
+systemctl start mlocate-updatedb.timer
+# Status
+systemctl status mlocate-updatedb.timer
+# Alle Timer von systemd 
+systemctl list-timers
+# Hier kann ich sehen was im Timer eingertragen (wann läuft dieser)
+systemctl cat mlocate-updatedb.timer
+# Hier kann ich sehen, welches Programm der Timer startet 
+# Warum: *.service und *.timer - Dateien mit gleichem gelten als zusammengehörig  
+systemctl cat mlocate-updatedb.service
+```
