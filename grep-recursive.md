@@ -5,4 +5,8 @@
 # !! im gesamten /etc - Verzeichnis 
 # !! Egal ob groß- oder kleingeschrieben 
 grep -inr 'documentroot' /etc
+
+# über mehrere verzeichnisse
+grep -inr 'documentroot' /etc /var 
+
 ```
