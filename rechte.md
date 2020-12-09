@@ -60,9 +60,6 @@ chmod u+r .
 
 ```
 
-```
-
-
 ## Spezielles Verhalten von vi bei w! (overwrite) 
 
   * https://unix.stackexchange.com/questions/502826/how-vim-overwrites-readonly-mode
