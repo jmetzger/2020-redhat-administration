@@ -32,4 +32,7 @@ find / -type -d user sssd -name '*conf*'
 # gleich wie vorher nur case insensitive (egal ob klein oder groß-geschrieben, es wird gefunden)  
 find / -type d -user sssd -iname '*CONF*'
 
+# Zusätzlich nach bestimmten rechten suchen 
+find / -type d -user sssd  -perm 700
+
 ```
