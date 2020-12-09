@@ -29,7 +29,7 @@ find / -type -d -user sssd -name 'conf'
 # alle Verzeichnisse, eigentümer sssd, in name soll "conf" vorkommen 
 find / -type -d user sssd -name '*conf*' 
 
-# gleich wie vorher nur case insensitive (sowohl Conf, als auch conf oder CONF werden gefunden) 
-find / -type d -user sssd -iname '*Conf*'
+# gleich wie vorher nur case insensitive (egal ob klein oder groß-geschrieben, es wird gefunden)  
+find / -type d -user sssd -iname '*CONF*'
 
 ```
