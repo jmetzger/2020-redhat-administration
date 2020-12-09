@@ -1,5 +1,6 @@
 # Redhat Administration 
 
+1. [Rechte unter Linux](rechte.md) 
 1. [Übung](uebung1.md) 
 1. [Übung: Installieren von Diensten](uebung-dienste.md) 
 
