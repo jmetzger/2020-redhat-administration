@@ -36,3 +36,12 @@ find / -type d -user sssd -iname '*CONF*'
 find / -type d -user sssd  -perm 700
 
 ```
+
+## Aktion nach/bei Suche ausführen 
+
+```
+# für alle Verzeichnisse, die gefunden werden ein ls -la machen 
+find / -type d -user sssd  -perm 700 -exec ls -la {} ';'
+# andere Schreibweise 
+find / -type d -user sssd  -perm 700 -exec ls -la {} \;
+```
