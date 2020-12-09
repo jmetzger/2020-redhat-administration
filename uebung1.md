@@ -6,7 +6,7 @@
 1. Im Heimatverzeichnis eine Verzeichnisstruktur erstellen 
    fotos/2020/januar 
 
-2. In diesem Verzeichnis eine neue Datei anlegen mit dem Inhalt 
+2. In dem Verzeichnis 'januar' eine neue Datei mit dem name README anlegen mit dem Inhalt 
    Das sind meine Fotos 
    
 3. in fotos/2020 ein Verzeichnis fehler anlegen 
