@@ -70,14 +70,24 @@ mkdir -p daten/baustelle/gewerk
 ```
 
 
-## Verzeichnis anzeigen 
+## Verzeichnis anzeigen / Dateien anzeigen
 
+### Verzeichnis anzeigen
 ```
 ls -l  # Verzeichnis alphabetisch anzeigen 
 ls -ltr # t letzte Modfikation zuerst anzeigen (Modifizierugsdatum) 
         # umdrehen - d.h. genau anders herum 
 ls -la 
 ```
+
+### Dateien anzeigen (spezielle) 
+```
+# um zu überprüfen, ob datei im verzeichnis existiet 
+ls -la dateiname 
+# oder 
+ls -la | grep dateiname 
+```
+
 
 ## Hilfe bekommen
 
@@ -92,6 +102,20 @@ help pwd
 ```
 rm training 
 # nachfrage löschen mit "y" oder "j" beantworten 
+```
+
+## Dateien verschieben  
+
+```
+mv vonhier nachhier 
+# Beispiel 
+mv datei ~/.local/bin
+# Achtung, wenn verzeichnis existert, wird datei unter diesem namen angelegt
+mv datei ~/.local/sbin 
+cd ~/.local/bin 
+ls -la sbin 
+[trainer01@centos8-01 .local]$ ls -la sbin
+-rw-rw-r--. 1 trainer01 trainer01 29  9. Dez 09:44 sbin
 ```
 
 ## Alias einrichten und verwenden 
