@@ -89,6 +89,18 @@ ls -la dateiname
 ls -la | grep dateiname 
 ```
 
+### Verzeichnisse kopieren 
+
+```
+# das kopierte VErzeichnis gehört root:root 
+# in den root-benutzer wechseln
+sudo su 
+cp -r fotos fotos.bkup 
+
+# das kopierte Verzeichnis hat die gleichen Rechte wie das Ursprungsverzeichnis 
+# in den root-benutzer wechseln 
+cp -a fotos fotos.bkup2
+```
 
 ## Hilfe bekommen
 
