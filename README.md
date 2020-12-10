@@ -157,8 +157,8 @@ systemctl status sshd  # wenn wir keine .service dahinter schreiben, geht system
 systemctl status sshd.service 
 
 # Rausfinden unter welchem Namen der Dienst zu finden ist (in den Prozessen ps aux und lsof -i) 
-systemctl cat sshd.service | grep ExecStart # weil in der Zeile mit ExecStart steht, wie der Dienst gestartet
-                                            # und davon nehmen wir nur den BASENAME = z.B. sshd (alles nach dem letzten Slash "/" 
+systemctl cat sshd.service | grep -i ExecStart= # weil in der Zeile mit ExecStart steht, wie der Dienst gestartet
+                                                # und davon nehmen wir nur den BASENAME = z.B. sshd (alles nach dem letzten Slash "/" 
 
 # lauscht der dienst nach draussen
 sudo lsof -i | grep ssh 
@@ -181,7 +181,7 @@ systemctl enable mariadb.service
 systemctl start mariadb.service 
 
 # Jetzt rausfinden, wie der Dienst gestartet wird (welcher Name) 
-systemctl cat mariadb.service | grep ExecStart # hier wieder basename (als hinter /), z.B. mysqld 
+systemctl cat mariadb.service | grep -i ExecStart= # hier wieder basename (als hinter /), z.B. mysqld 
 
 # Rausfinden ob der Dienst nach draussen lauscht 
 lsof -i | grep mysqld # name aus letzter Aktion -> systemctl cat mariadb.service 
