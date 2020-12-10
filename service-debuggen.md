@@ -1,5 +1,6 @@
 # Service debuggen (Service startet nicht) 
 
+## Walkthrough (Kochrezept) 
 ```
 # Wir starten den Service und stellen fest erläuft nicht
 # systemctl start servicename 
@@ -32,4 +33,11 @@ tail -n 1000 mariadb.log
 cd /var/log 
 # Eventuell mehr anzeigen, weil alles drin ist. 
 tail -n 1000 messages 
+```
 
+## Ausgabe in anderes File umleiten zum Weiterarbeiten 
+
+```
+tail -n 10000 messages > /root/debugging.log 
+# weiterarbeiten mit vi / less oder whatever 
+```
