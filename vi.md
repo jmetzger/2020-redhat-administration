@@ -1,5 +1,11 @@
 # vi
 
+## vimtutor (sehr gut zum Lernen) 
+
+```
+vimtutor # sollte installiert auf Redhat/Centos
+```
+
 ## vi aufrufen 
 
 ```
