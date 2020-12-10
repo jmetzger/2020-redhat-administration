@@ -155,7 +155,11 @@ systemctl status sshd  # wenn wir keine .service dahinter schreiben, geht system
 systemctl status sshd.service 
 
 # lauscht der dienst nach draussen
-lsof -i | grep ssh 
+sudo lsof -i | grep ssh 
+# oder in den root-benutzer wechseln 
+sudo su -
+lsof -i | grep ssh # Achtung: Als normaler Benutzer zeigt lsof -i nix an, weil nicht unter diesem Benutzer gestartet 
+
 # welcher port ist ssh, d.h. welche zahl 
 cat /etc/services | grep ssh 
 ```
