@@ -1,9 +1,11 @@
-# Redhat Administration 
+# Redhat/Centos 8 - Grundlagen Administration 
 
+1. Benutzer & Rechte
 1. [Rechte unter Linux](rechte.md) 
 1. [Benutzer unter Linux](benutzer.md)
-1. [Suche mit Locate](suche-locate.md)
-1. [Suche mit Find](find.md)
+1. Suche
+   1. [Suche mit Locate](suche-locate.md)
+   1. [Suche mit Find](find.md)
 1. Tipps & Tricks 
    1. [Läuft Dienst und lauscht nach draussen?](#wie-kann-ich-herausfinden-ob-ein-dienst-auf-dem-system-existiert-und-läuft-)
    1. [Service Debuggen, wenn er nicht startet](service-debuggen.md) 
