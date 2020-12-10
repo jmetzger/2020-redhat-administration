@@ -14,6 +14,7 @@
 1. [Übung](uebung1.md) 
 1. [Übung: Installieren von Diensten](uebung-dienste.md) 
 1. [Übung: Find](uebung-find.md) 
+1. [Dateien und Verzeichnisse vergleichen](diff.md) 
 
 
 ## Cheatsheet 
