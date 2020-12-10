@@ -8,6 +8,6 @@
 3. Herausfinden, wie der Service heisst mit systemctl 
 4. Service aktivieren und starten 
 5. Gucken, ob der Service nach draussen lauscht (port 3306) 
-6. In der Services herausfinden, was hinter dem namen mysql liegt. 
+6. In der /etc/services herausfinden, was sich hinter dem namen mysql verbirgt. 
 
 ```
