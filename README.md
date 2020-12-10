@@ -15,6 +15,7 @@
 1. [Übung: Installieren von Diensten](uebung-dienste.md) 
 1. [Übung: Find](uebung-find.md) 
 1. [Dateien und Verzeichnisse vergleichen](diff.md) 
+1. [Archivieren von Verzeichnissen mit tar](tar.md) 
 
 
 ## Cheatsheet 
