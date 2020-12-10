@@ -16,7 +16,7 @@
 1. [Übung: Find](uebung-find.md) 
 1. [Dateien und Verzeichnisse vergleichen](diff.md) 
 1. [Archivieren von Verzeichnissen mit tar](tar.md) 
-1. [Suchen und Ersetzen mit awk/sed](awk-sed.md)
+1. [Suchen und Ersetzen mit awk/sed](sed-awk.md)
 
 
 ## Cheatsheet 
