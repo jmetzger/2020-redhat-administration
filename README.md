@@ -156,6 +156,10 @@ systemctl list-unit-files -t service | grep -i ssh # grep zeigt alle Zeilen an, 
 systemctl status sshd  # wenn wir keine .service dahinter schreiben, geht systemctl davon aus, dass wir einen service meinen 
 systemctl status sshd.service 
 
+# Rausfinden unter welchem Namen der Dienst zu finden ist (in den Prozessen ps aux und lsof -i) 
+systemctl cat sshd.service | grep ExecStart # weil in der Zeile mit ExecStart steht, wie der Dienst gestartet
+                                            # und davon nehmen wir nur den BASENAME = z.B. sshd (alles nach dem letzten Slash "/" 
+
 # lauscht der dienst nach draussen
 sudo lsof -i | grep ssh 
 # oder in den root-benutzer wechseln 
@@ -164,6 +168,24 @@ lsof -i | grep ssh # Achtung: Als normaler Benutzer zeigt lsof -i nix an, weil n
 
 # welcher port ist ssh, d.h. welche zahl 
 cat /etc/services | grep ssh 
+```
+
+```
+# BEISPIEL 2:
+systemctl list-unit-files -t service | grep -i mariadb 
+mariadb.service
+
+# Dienst aktivieren 
+systemctl enable mariadb.service 
+# Dienst startem
+systemctl start mariadb.service 
+
+# Jetzt rausfinden, wie der Dienst gestartet wird (welcher Name) 
+systemctl cat mariadb.service | grep ExecStart # hier wieder basename (als hinter /), z.B. mysqld 
+
+# Rausfinden ob der Dienst nach draussen lauscht 
+lsof -i | grep mysqld # name aus letzter Aktion -> systemctl cat mariadb.service 
+
 ```
 
 ## Wo wird festgelegt, welches Repo (Webseite oder FTP) für die Installation von Paketen verwendet wird 
