@@ -4,6 +4,7 @@
 1. [Benutzer unter Linux](benutzer.md)
 1. [Suche mit Locate](suche-locate.md)
 1. [Suche mit Find](find.md)
+1. [Läuft Dienst und lauscht nach draussen?](#wie-kann-ich-herausfinden-ob-ein-dienst-auf-dem-system-existiert-und-läuft-)
 1. [!!!Recursive Suche mit Grep !!!](grep-recursive.md)
 1. [Übung](uebung1.md) 
 1. [Übung: Installieren von Diensten](uebung-dienste.md) 
