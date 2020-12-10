@@ -1,8 +1,8 @@
 # Redhat/Centos 8 - Grundlagen Administration 
 
 1. Benutzer & Rechte
-1. [Rechte unter Linux](rechte.md) 
-1. [Benutzer unter Linux](benutzer.md)
+   1. [Rechte unter Linux](rechte.md) 
+   1. [Benutzer unter Linux](benutzer.md)
 1. Suche
    1. [Suche mit Locate](suche-locate.md)
    1. [Suche mit Find](find.md)
