@@ -8,6 +8,7 @@
    1. [Läuft Dienst und lauscht nach draussen?](#wie-kann-ich-herausfinden-ob-ein-dienst-auf-dem-system-existiert-und-läuft-)
    1. [Service Debuggen, wenn er nicht startet](service-debuggen.md) 
    1. [Ausgewählte Prozesse-ssh- mit Überschrift anzeigen](prozesse-ueberschrift.md)
+   1. [In ausgewählten Zeilen -> Worta durch Wortb ersetzen](zeilen-a-durch-b-ersetzen.md)
 1. [!!!Recursive Suche mit Grep !!!](grep-recursive.md)
 1. [Übung](uebung1.md) 
 1. [Übung: Installieren von Diensten](uebung-dienste.md) 
