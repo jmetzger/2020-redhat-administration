@@ -34,6 +34,10 @@ sed '$d' /etc/sedtest
 sed '12,$d' /etc/sedtest 
 ```
 
+## Direkt in file wieder reinschreiben 
 
+```
+sed -i '12,$d' /etc/sedtest
+``` 
 
 
