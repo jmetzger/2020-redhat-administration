@@ -9,6 +9,7 @@
    1. [Service Debuggen, wenn er nicht startet](service-debuggen.md) 
    1. [Ausgewählte Prozesse-ssh- mit Überschrift anzeigen](prozesse-ueberschrift.md)
    1. [In ausgewählten Zeilen -> Worta durch Wortb ersetzen](zeilen-a-durch-b-ersetzen.md)
+1. [Arbeiten mit grep](grep.md)
 1. [!!!Recursive Suche mit Grep !!!](grep-recursive.md)
 1. [Übung](uebung1.md) 
 1. [Übung: Installieren von Diensten](uebung-dienste.md) 
